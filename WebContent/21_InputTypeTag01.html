@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Input Type 01</title>
+</head>
+<body>
+    <!-- 모든 입력태그들은 대부분 form태그 안쪽에 쓰여집니다. -->
+    <form action="">
+        <!-- 글자 입력 양식 생성 -->
+        <label for="id">아이디 : <input id="id" type="text"></label><br>
+        <!-- 비밀번호 입력 양식 생성 -->
+        <label for="password">PASSWORD : <input id="password" type="password"></label>
+
+        <hr>
+
+        <!-- 체크박스 생성-->
+        <label for ="checkbox1">첫째 <input type="checkbox" id="checkbox1"></label>
+        <label for ="checkbox2">둘째 <input type="checkbox" id="checkbox2"></label>
+        <label for ="checkbox3">셋째 <input type="checkbox" id="checkbox3"></label>
+
+        <hr>
+
+        <label for="male">남자<input type="radio" name="gender" id="male"></label>
+        <label for="female">여자<input type="radio" name="gender" id="female"></label>
+
+        <hr>
+
+        <select name="dkts">
+            <option value="1">김밥</option>
+            <option value="2">떡볶이</option>
+            <option value="3">튀김</option>
+            <option value="4">순대</option>
+        </select> <!--펼침 목록-->
+
+        <!-- submit과 reset버튼은 form과 함께 사용되는 버튼으로 name값이 생략되곤 합니다. -->
+        <hr>
+        <input type="file" name="selectfile"><!-- 파일 입력 양식 생성 -->
+         <hr>
+        <input type="button" value="클릭"> <!-- 버튼 생성 -->
+        <hr>
+        <input type="submit" value="작성완료">
+        <hr>
+        <input type="reset" value="다시작성"> <!-- 전송 및 취소 버튼 생성 -->
+        <hr>
+        <!-- 보이지 않는 입력 양식 생성 -->
+        <input type="hidden" name="loginUser" value="홍길동">
+        <hr>
+
+        <textarea cols="50" rows="10"></textarea><!--멀티라인 텍스트 입력란-->
+        <hr>
+         <!-- 입력 내용 안내 placeholder는 클릭하고 내용을 입력하면 지워지는 안내문구 -->
+         <label for="address">주소 : <input id="address" type="text" size="50" placeholder="주소입력"></label>
+         
+
+    </form>
+</body>
+</html>
